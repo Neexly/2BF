@@ -1,6 +1,40 @@
-<ion-toolbar>
-  <ion-title>Page de connexion</ion-title>
-</ion-toolbar>
+<ion-content>
 
-<ion-button (click)='goToInscription()'>Inscription</ion-button>
-<ion-button (click)='goToHome()'>Connexion</ion-button>
+  <div class="logo">
+    <img src="../assets/img/lelogo.png" style="
+    width: 400px;
+    height: 300px;
+">
+  </div>
+  <h1 style="padding-left: 3.5em; margin-top: 0px; margin-bottom: 50px;" class="titre">Connectez-vous</h1>
+  <ion-item>
+    <ion-label color="light">Email</ion-label>
+    <ion-input color="light" type="mail" placeholder="Adresse email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="light">Mot de passe</ion-label>
+    <ion-input color="light" type="password" placeholder="Mot de passe"></ion-input>
+  </ion-item>
+  <ion-item lines="none" style="padding-top: 2em;">
+    <ion-button slot="end" fill="clear" class="mdp" style="margin-bottom: 10px;">Mot de passe oublié ?</ion-button>
+  </ion-item>
+  <div style="padding-left: 5em; padding-top: 1em;">
+    <ion-button (click)='goToInscription()' fill="outline">Inscription</ion-button>
+    <ion-button (click)='goToHome()' fill="outline">Connexion</ion-button>
+  </div>
+  <ion-item lines="none">
+    <ion-label color="light" text-center class="mdp1">Ou connectez-vous avec</ion-label>
+  </ion-item>
+
+  <div class="flex" style="padding-left:7em;">
+    <ion-button color="facebook" shape="round">
+      <ion-icon slot="start" name="logo-facebook"></ion-icon>
+      Facebook
+    </ion-button>
+    <ion-button color="google" color="youtube" shape="round">
+      <ion-icon slot="start" name="logo-google" style="padding-left: 0.4em;"></ion-icon>
+      Google
+    </ion-button>
+  </div>
+</ion-content>
